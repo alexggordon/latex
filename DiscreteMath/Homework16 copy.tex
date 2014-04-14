@@ -1,0 +1,87 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 16, Section 3.3: 5, 20(a); 4.1: 2, 5, 9(b), 13 }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework: 3.3}
+\subsection*{5.}
+If $A \subseteq B$ and $A \subseteq C$, then it follows that $A \subseteq (B \cap C)$\\
+Proof: Let A, B and C be given and assume that $A \subseteq B $ and  $A \subset C$. Let $x \in A$ be given.\\
+1) If $X \in A$ and $A \subseteq B$ then $X \in B$. Similarly, it follows that if $A \subseteq C$ then $X \in C$.\\
+2) If $X \in C$ and $X \in B$ the it follows that $B \cap C$ contains the element X. 
+\\ Therefore, since $X \in B \cap C$, $A \subseteq (B \cap C)$
+\subsection*{20. A)}
+Proof: let $X \in \mathcal{P} (A \cap B)$ This means that $X \subseteq (A \cap B)$.\\
+Since $X \subseteq A$, it follows that $X \in \mathcal{P}(A)$. \\
+Since $\mathcal{P} (A \cap B) \subseteq \mathcal{P}(A)$, then it must be so that $X \subseteq B$. \\
+Finally, it then logically shows that  $\mathcal{P} (A \cap B) \subseteq \mathcal{P}(B)$, which concludes our assertion that $\mathcal{P} (A \cap B) \subseteq \mathcal{P}(A \cap B)$
+\section*{Homework: 4.1}
+\subsection*{2. A)}
+$g(z) = 2z + \frac{1}{z + 1}$\\
+The domain is $\{z \in \mathds{R} \ | z \neq -1 \}$\\
+The codomain is $\mathds{R}$
+\subsection*{2. B)}
+Domain: $\{\textit{t}\in\mathds{R}$ with $\textit{t}\geq 0 \}$\\
+Codomain $\{\textit{y}\in\mathds{R}$ with $\textit{y}\geq 1\}$
+\subsection*{2. C)}
+Domain: $\{\textit{x}\in\mathds{R}$ with $\textit{x}\geq -1/2\}$\\
+ Codomain $\{\textit{y}\in\mathds{R}$ with $\textit{y}\geq 0\}$
+\subsection*{2. D)}
+Domain: $\{\textit{t}\in\mathds{R}$ with $\textit{t}\geq -1\}$\\
+ Codomain $\{\textit{y}\in\mathds{R}$ with $\textit{y}\geq 0\}$
+\subsection*{2. E)}
+Domain: $\mathds{R}$ \\
+Codomain $\{\textit{y}\in\mathds{R}$ with 1 $\geq\textit{y}\textgreater 0 \}$
+
+\subsection*{5.}
+\
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\subsection*{9. B)}
+\
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\\ \
+\subsection*{13.}
+a is the only arrow diagram that represents a function when the domain and codomain are the set $\{1, 2, 3, 4, 5, 6\}$
+\end{document}

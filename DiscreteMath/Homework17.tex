@@ -1,0 +1,57 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 17, Section 4.2: 4, 9(c), 11, 12, 20}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{4.}
+$N(C) : P(S) \rightarrow \{0, 1, 2, 3\}$ is the result and is interpreted as "The size of the compliment of."
+\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\subsection*{9. C)}
+$f$ has domain $\{1, 2, 3, 4\}$.\\
+Codomain $\{a, b, c, d\}$.\\
+The resulting set is $\{(1,b), (2,a), (3,c), (4,d)\}$
+\subsection*{11}
+1) $\textit{x}(\textit{b}) = \textit{A}$\\
+2) ($\textit{x}\circ\textit{y}$)($\textit{A}$) = $\textit{x}$($\textit{y}$($\textit{A}$))\\
+3) $\textit{x}(\textit{b}) = \textit{A}$\\
+4) ($\textit{x}\circ\textit{y}$)($\textit{A}$) = $\textit{A}$\\
+5) ($\textit{y}\circ\textit{x}$)($\textit{A}$) = $\textit{y}$($\textit{A}$)\\
+6) $\textit{y}$($\textit{A}$) = $\textit{B}$\\
+7) ($\textit{y}\circ\textit{x}$)
+\subsection*{12}
+1) $\textit{x}(\textit{B}) = \textit{A}$\\
+2) ($\textit{x}\circ\textit{y}$)($\textit{A}$) = $\textit{x}$($\textit{y}$($\textit{A}$))\\
+3) $\textit{x}(\textit{B}) = \textit{a}$\\
+4) ($\textit{x}\circ\textit{y}$)($\textit{A}$) = $\textit{A}$\\
+5) ($\textit{f}\circ\textit{x}$)($\textit{B}$) = $\textit{y}$($\textit{A}$)\\
+6) $\textit{f}$($\textit{A}$) = $\textit{B}$\\
+7) ($\textit{y}\circ\textit{x}$)
+\subsection*{20}
+$(y, a) \in S$ suggests that town $y$ is the location that $a$ was born. 
+\end{document}

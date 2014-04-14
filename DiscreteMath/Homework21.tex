@@ -1,0 +1,51 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 21, Section 4.5: 2, 6, 11, 14}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{2. A)}
+$R_1$ is symmetric
+\subsection*{2. B)}
+$R_2$ is symmetric
+\subsection*{2. C)}
+$R_3$ is not symmetric
+\subsection*{6.}
+\{\{ACBD, CBDA, BDAC, DACB\}, \{ADBC, DBCA, BCAD, CADB\}, \{ABCD,BCDA,CDAB,DABC\},\{ADCB, DCBA, CBAD, BADC\},\{ABDC,BDCA,DCAB,CABD\}, \{ACDB, CDBA, DBAC, BACD\}\}
+
+\subsection*{11. A)}
+Let $a \in \mathds{Z} $ since $a - a = 0$ and a is divisible by $n$, $(a,a) \in \mathds{R}$. This means R is reflexive. 
+\subsection*{11. B)}
+Let $a, b \in \mathds{Z}$ so that $(a,b) \in \mathds{R}$. Since $a - b$ is divisible by $n$, which in turn means that $a - b= kn$ and $b-a= -kn$. Since $-k$ is an integer it means that $b -a$ is divisible by $n$, which means that R is symmetric. 
+\subsection*{11. C)}
+\subsection*{11. D)}
+
+\subsection*{14. A)}
+\{(1,1),(2,2),(3,3),(3,2),(1,3),(1,2)\}
+\subsection*{14. B)}
+\{(1,1),(2,2),(3,3),(3,2),(1,3),(3,1),(2,3)\}
+\subsection*{14. C)}
+\{(1,1),(1,2),(2,1),(2,2)\}
+
+
+
+
+
+
+
+\end{document}

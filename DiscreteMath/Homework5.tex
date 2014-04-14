@@ -1,0 +1,90 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 5, Section 1.6: 3, 4, 5, 7}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3. A)}
+The line of reasoning is invalid because of the converse fallacy
+\subsection*{3. B)}
+The line of reasoning is valid because of Modus Tollens
+\subsection*{3. C)}
+The line of reasoning is valid because of Modus Ponens
+\subsection*{4. A)}
+If you read the book, then you will pass the course.
+\subsection*{4. B)}
+If you will pass the course, then you must read the book. 
+\subsection*{4. C)}
+If you will pass the course, then you must read the book. 
+\subsection*{5. A)}
+If you want a refund, then you need a receipt. 
+\subsection*{5. B)}
+If you can pronounce "Euler", then you can grasp someone's mathematics background. 
+\subsection*{5. C)}
+If you are 16 years old, then you are legally driving in Pennsylvania. 
+\subsection*{5. D)}
+If you study Descartes, then you understand the history of calculus
+\subsection*{5. E)}
+If you want to stay dry outside, then you need to carry an umbrella
+\subsection*{5. F)}
+If you like horror stories, then Stephen King is fun to read. 
+
+\subsection*{7. A)}
+\begin{tabular}{ l | r | c || r || r ||}
+p & q & r & $ (p \rightarrow (q \wedge r)) \vee (( p \wedge q) \rightarrow r)$ \\
+  \hline                        
+  T & T & T & T\\
+  T & T & F & F\\
+  T & F & T & T\\
+  T & F & F & T\\
+  F & T & T & T\\
+  F & T & F & T\\
+  F & F & T & T\\
+  F & F & F & T\\
+  \hline  
+\end{tabular} \\
+This expression is neither a tautology or a contradiction. 
+\subsection*{7. B)}
+\begin{tabular}{ l | c || r || r ||}
+p & q & r & $ ((p \rightarrow q) \wedge (q \rightarrow  \neg p )) \rightarrow \neg p$ \\
+  \hline                        
+  T & T & T\\
+  T & F & T\\
+  F & T & T\\
+  F & F & T\\
+  \hline  
+\end{tabular} \\
+This expression is a tautology. 
+
+\subsection*{7. C)}
+\begin{tabular}{ l | r | c || r || r ||}
+p & q & r & $ ((p \rightarrow q) \wedge (\neg p \rightarrow r)) \rightarrow (q \vee r)$ \\
+  \hline                        
+  T & T & T & T\\
+  T & T & F & T\\
+  T & F & T & T\\
+  T & F & F & T\\
+  F & T & T & T\\
+  F & T & F & T\\
+  F & F & T & T\\
+  F & F & F & T\\
+  \hline  
+\end{tabular} \\
+This expression is a tautology. 
+
+\end{document}

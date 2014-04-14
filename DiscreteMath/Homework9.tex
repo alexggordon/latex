@@ -1,0 +1,60 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 9, Section 2.4: 4(b), 6, 7, 16 }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Induction Murdering Time.}
+\subsection*{4. B)}
+For $n=1$ , it is given that $n^3-n=0 $ is divisible by 3. Let it be true for $n=k$. 
+So $k^3-k$ is divisible by $3k$. Let us check that it is also divisible for $n=k+1$.\
+\begin{align*} 
+\\&= (k+1)^3-(k+1)
+\\  &= k^3+3k^2+3k+1-k-1
+\\ &=(k^3-k) + 3k(k+1)\\
+\end{align*}
+First factor is divisible by 3k. Second factor is multiple of 3 hence, divisible by 3. By induction it is true.
+\subsection*{6.}
+This proof will be mostly mathematical. However, for the first part of it, let us try some examples. Suppose that $n = 2$. It then follows that:\\
+\begin{align*} 
+\\&= 2^6 - 1
+\\  &= 63\\
+\end{align*}
+63 isn't prime. Let us supposed that $2^{3n} - 1$ isn't prime all the way through m + 1. 
+\begin{align*} 
+\\ & =  2^{3(m+1)} - 1
+\\&= 2^3 \times 2^{3n} - 1
+\\&= 7 \times 2^{3n} +  2^{3(n)} - 1
+\\&= 7 \times 2^{3n} +  2^{3n} - 1\\
+\end{align*}
+Now before I continue, I'd just like to note that $a^n - 1 = (a - 1)(a^{n-1} + a^{n-2} + .. + 1)$. As such, it follows that;
+\begin{align*} 
+\\2{3(n+1)}  &= 7 \times 2^{3n} + (2^3 -1)((2^3)^{n-1} + (n^3)^{n-2} + ... + 1)
+\\&= 7 \times (2^{3n} + (2^3)^{n-1} + (2^3)^{n-2} + ... + 1)\\
+\end{align*}
+The math above shows that since $2^{3(n+1)}$ is a composite number, so it follows that  $2^{3n} - 1$ is a composite number for all $n \geq 2$ because $n + 1$ is equal to any integer. 
+\subsection*{7.}
+The recurrence can be rewritten as\\$p_n − p_n−1 = p_{n−1} + p_{n−2}$\\
+This can also be written as$(p_{n+1} − p_n)^2 − 2p_{n}{^2} = (−1)^n$\\
+Let S(n) be the statement given by the previous equation. Let me no show that they are both true. Now assume that the first equation, the second and so on to S(m − 1) have all been validated. Now, continuing, we'll set the left side of the equation equal to 
+$−p^2_m + 2p_m p_m −1 + p^2_{m−1}$ Factoring out a 1 and completing the square, we get\\
+$-(p_m -p_{m-1})^2$
+\subsection*{16.}
+Suppose that $n ≥ 28$ and $n = 8a + 5b$\\for some nonnegative integers $a$ and $b$. \\
+\\ If $a = 1$ then since $n \geq 28$, we must have $5b  \geq 20$, so that $b  \geq 4$. In this case we may replace 3 of the 5 cent stamps with 2 of the 8 cent stamps to get $n+1 = 8(a+2)+5(b−3)$.
+If $a = 2$, then since $n \geq 28$, we must have $5b \geq 12$, and since $b$ is an integer, then $b \geq 3$. Again, in this case, we may replace 3 of the 5 cent stamps with 2 of the 8 cents stamps to get $n+1 = 8(a+2)+5(b−3)$. If $a \geq 3$, then we may replace 3 of the 8 cent stamps with 5 of the 5 cent stamps to get $n+1 = 8(a−3)+5(b+5)$.Thus in all cases, we may write $n + 1 = 8a′ + 5b′$ for some nonnegative integers $a′$ and$ b′$.Therefore, by the principle of mathematical induction, for any integer $n \geq  = 28$, we can use a combination of 5 cent and 8 cent stamps to obtain n cents in postage.\\ Take that induction. 
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 12, Section 2.7: 6(do only 1,...,6, do 7,...,12 for extra credit), 10(a,b) (trial and error may work) }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\subsection*{6.}
+1:1\\
+2:7\\
+3:9\\
+4:10\\
+5:8\\
+6:11\\
+7:2\\
+8:5\\
+9:3\\
+10:4\\
+11:6\\
+12:12
+
+\subsection*{10. A)}
+All $x \equiv_{15} 2 $will work in this situation.
+
+\subsection*{10. B)}
+All $x \equiv_{8} 0 $will work in this situation.
+
+\end{document}

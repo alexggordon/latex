@@ -1,0 +1,40 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 32, Section 6.3: 2, 4, 6, 8, 12}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{2.}
+$C(7,5) \cdot (\frac{1}{6})^5 \cdot (\frac{5}{6})^2 + C(7,6) \cdot (\frac{1}{6})^6 \cdot (\frac{5}{6})^1 + C(7,7) \cdot (\frac{1}{6})$
+\subsection*{4.}
+$\frac{1}{2}^{10} \cdot (C(10,8) + C(10,9) + 1)$
+\subsection*{6.}
+$ C(5,3) \cdot (\frac{1}{2})^3 \cdot (\frac{1}{2})^2 + C(5,4) \cdot (\frac{1}{2})^4 \cdot (\frac{1}{2})^1 + \frac{1}{2}^5$
+\subsection*{8.}
+$C(4,3) \cdot (\frac{1}{2})^3 \cdot (\frac{1}{2})^1 + \frac{1}{2}^4$
+\subsection*{12. A)}
+$\frac{3 \cdot 5 \cdot 4}{6^3}$
+\subsection*{12. B)}
+$\frac{3 \cdot 5 \cdot 4}{6^3}$
+\subsection*{12. C)}
+$\frac{3 \cdot 5 + 5}{6^3}$
+
+
+
+
+\end{document}

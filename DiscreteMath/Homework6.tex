@@ -1,0 +1,55 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 6, Section 2.1: 2(b), 4(b), 6(b), 8, 9(b), 11(b), 13(b)}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{2. B)}
+True.\\
+Examples: \\
+9 = 90, which is divisible by 8\\
+15 = 224, which is divisible by 8\\
+3 = 8, which is divisible by 8
+\subsection*{4. B)}
+Dear Reader, I hope this proof finds you well. I am here to show you that if an integer n is even, then n + 8 is even. Firstly, I'd like to start out with a definition of even. An even integer is one that can be written in the formula 2j, where j is any integer. Secondly, I'd like to point out that 8 is an even integer because it can be written in the form 2(4), as we previously showed defines an even number. Thirdly, I'd like to show by the closure properties 2j, an even number plus 8, an even number, results in a final product that is an even number. 
+
+\subsection*{6. B)}
+x = 34
+y = 8
+Let even integers x and y be given. Then there is an integer K such that 34 = 2(K), and there is an integer L such that 8 = 2(L). So 34 + 8 = 2(K) + 2(L) = 2(K + L), since K and L are integers, this shows that the result, 42, is even. 
+\subsection*{8.}
+Dear Reader, I hope this proof finds you well. I am here to show you that if an integer n is odd, then $3n^2 + 1$ is divisible by 4. To do this, I'd first like to show that an odd integer is a integer that can be represented as $2j + 1$, where j is any integer. Secondly, I'd like to show that because $n^2$ is equal to n(n), and n is always odd, then the result of $3n^2$ will always be divisible by three, since n(n) can be any integer and 3(n(n)) is a multiple of 3. Therefore, since 3(n(n)) is a multiple of three, any multiple of 3, plus 1, will be a multiple of 4. 
+
+\subsection*{9. B)}
+Dear Reader, I hope this proof finds you well. I am here to show you that if an integer n is odd, and integer j is always even, then the product of these (n)(j) is even. Firstly, I'd like to start with the definitions for even and odd integers. An even integer is is one that can be written in the form 2j, where j is any integer. An odd integer is a integer that can be represented as $2n + 1$, where n is any integer. Secondly I'd like to show that $(2n + 1)(2j)$, by the closure property is $4nj + 2j$ which, by the closure properties can be shown that the expression 4(nj) is even, because (nj) can be any integer, and also that 2j is even because j can be any integer. This means that those to expressions added together is an even expression. 
+
+\subsection*{11. B)}
+Let y be an odd integer and x be an even integer. Then there is an integer k such that $ y = 2k + 1$ and there is an integer l such that $ x= 2l$. It follows then that
+\begin{align*} 
+\\x(y) &= (2k + 1)(2l)
+\\  &= 4kl + 2l \\
+\Aboxed{& = 5k +3 }
+\end{align*}
+Since 4(kl) is any integer and 2(l) is any integer, we can conclude that x(y) is odd. 
+
+\subsection*{13. B)}
+The contraposative is if n is even then 3n is even. 
+
+Dear Reader, I hope this proof finds you well. I am here to show you that if an integer n is odd, and integer j is always even, then the product of these (n)(j) is even. Firstly, I'd like to start with the definitions for an even integer. An even integer is is one that can be written in the form 2j, where j is any integer. Secondly, it is true that if 3n equals 2n + n. Since 2n is an even integer n is an even integer, then by the closure properties that 3n is an even number. 
+
+\end{document}

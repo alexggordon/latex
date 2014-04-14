@@ -1,0 +1,65 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 15, Section 3.3: 3(a,c), 10(b), 11(b), 19(b) }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3. A)}
+If $a$ is divisible by $b$, then$ \{ a \cdot m : m \in \mathds{Z} \} \subseteq \{b \cdot n : n \in \mathds{Z} \} $.
+\\Let us suppose that $a = 4$, $b = 2$ and $m = 3$, $n = 5$
+\\$a \cdot m = 12$
+\\$b \cdot n = 10$
+\\If this is the case then 12 is in the domain of integers, and 10 is a subset of the domain of integers showing the assertion valid. 
+\subsection*{3. C)}
+Let a prime number be equal to any number that is only divisible by 1 or itself.\\
+Let $k$ be equal to some integer.\\
+Let us assume that $x$ is prime and $x = (k + 1)(k - 1)$\\
+If $x = 3$, then $x = (2 + 1)(2 -1) = 3$, then x is prime for the value of $k = 2$ \\
+However, for all other values, $x$ would be equal to $(k + 1)(k - 1)$ which is equal to (an integer +1)(an integer -1). Assuming that (an integer +1)(an integer -1) equals (a)(b) then we know that a or b only equals 1 when $k = 2$ and $k = 0$ (however, when $k = 0$, $x = 0$). \\
+Since a prime number is only divisible by 1 and itself, we know that a prime number can not be equal to a multiple of any number two numbers other than 1 and itself, which means that since $a$ or $b$ is only equal to 1 when $k = 2$, then our assertion that the intersection of prime numbers and $k^2 - 1$ is only equal to the set of \{3\}
+
+\subsection*{10. B)}
+(Distributive property) $A \cup(B \cap C) = (A \cap B) \cup (A \cap C)$\\
+Let sets $A, B, C$ be given. Let $x \in A \cup (B \cap C)$. Then
+\begin{align*} 
+\\X \in A \cup (B \cap C)&= X \in A \ \vee \ X \in B \cap C 
+\\ &= X \in A \ \vee \ (X \in B \ \wedge \ X \in C)
+\\ &=  (X \in A \ \vee \ X \in B) \wedge (X \in A \ \vee \ X \in C)
+\\ &= (X \in A \cup B) \wedge (X \in A \cup C)
+\\ &= X \in (A \cup B) \cap (A \cup C)
+\end{align*} 
+We can now see that $A \cup(B \cap C) \subseteq (A \cup B) \cap (A \cup C)$
+\subsection*{11. B)}
+If $A \cap B = B$, then $A \cup B = A$\\
+Let $B = \{x\}$ \\
+If $x$ is $\in B$ and $B \cup A = A$ then $x$ $\in$ A. \\
+If $x$ is $\in A$ then the set of $A \cup B$ is the set of $ \{x\} \cup \{x\}$ which is the same as $A \cup B$, which means $A \cup B = A$
+\subsection*{19. B)}
+If $A \cup B = B $, then $A \cup (B \cap A') = B$
+\\ Let us begin by simplifying $A \cup (B \cap A')$
+\begin{align*} 
+\\&= A \cup (B \cap A')  \ \ Absorbtion
+\\ &= A \cap (B \cup A') \ \ Demorgan's
+\\ &=  (A \cap A') \cup (A \cap B) \ \ Distributive
+\\ &=  \emptyset \cup (A \cap B) \ \ negation 
+\\ &=  (A \cap B) \ \ identity
+\\ &=  B \ \ hypothesis
+\end{align*}
+Therefore: $A \cup (B \cap A') = B$
+
+\end{document}

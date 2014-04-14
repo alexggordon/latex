@@ -1,0 +1,114 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage,dsfont}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 3, Section 1.4: 6, 8, 9, 12, 13, 14 }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{6.}
+\begin{multicols}{2}
+\begin{align*}
+1) false\\2) true\\3) false\\4) false\\5) true\\6) true\\7) false\\8) true\\
+\end{align*}
+\begin{align*}
+\\9) false\\10) false\\11) true \\12) false\\13) true\\14) false\\15) true\\16) true
+\end{align*}
+\end{multicols}\
+
+\subsection*{8. a}
+D= all biology majors. \\
+B(n) = geometry\\
+$\exists_n \in D, B(n)$
+\subsection*{8. b}
+D = all computer science majors. \\
+B(n) = Math Minors\\
+$\exists_n \in D, \neg B(n)$
+\subsection*{8. c}
+D = Math Majors \\
+B(n) = n is required to take a business course\\
+$\forall_n \in D, \neg B(n)$
+\subsection*{8. d}
+D = puzzles \\
+B(n) = all puzzle solutions\\
+$\forall_n \in D, \neg B(n)$
+
+\subsection*{9. a}
+D = All all real numbers \\
+B(n): 2n = 9\\
+$\forall_n \in \mathds{R}, \neg B(n)$
+
+\subsection*{9. b}
+D = all triangles\\
+B(n) = equilateral and perimeter of 10\\
+$\exists_n \in D, B(n)$
+
+\subsection*{9. c}
+D = Every Circle\\
+B(n) = Has an integer diameter or an integer area\\
+$\forall_n \in D, B(n)$\
+
+\subsection*{9. d}
+D = Real Numbers\\
+B(n, m) = an integer between\\
+$\forall_n \in \mathds{R}, \forall_m  \in \mathds{R}, B(n, m )$
+
+\subsection*{12. a)}
+D= even numbers\\
+B(n) = prime numbers\\
+$\forall_n \in D, \neg B(n)$
+
+\subsection*{12. b)}
+D = All Triangles\\
+B(n) = has 4 sides\\
+$\forall_n \in D, \neg B(n)$
+
+\subsection*{12. c)}
+D = all integers\\
+$B(a, b) = \frac{a^2}{b^2} = 2$\\
+$\forall_a \ \in D,\ \forall_b \in D, \neg B(a, b)$
+
+\subsection*{12. d)}
+D = all square numbers\\
+B(n) = prime number plus one\\
+$\forall_n \in D, \neg B(n)$
+
+\subsection*{13. a) I)}
+-12
+\subsection*{13. a) II)}
+-2, -4 
+\subsection*{13. a) III)}
+The pattern is even numbers!
+
+\subsection*{13. b) I)}
+i = -3, 23, 3, -31
+\subsection*{13. b) II)}
+use the value y in the equation and solve it. 
+
+\subsection*{14. a) }
+
+$\exists_a \in \mathds{R}, \ \exists_b \ \mathds{Z}, a^2 + b \notin \mathds{Z} $
+
+\subsection*{14. b) }
+$\exists_y \in \mathds{R}, \ \exists_x \ \mathds{R}, x + y \neq x$
+
+\subsection*{14. c) }
+$\exists_x \in \mathds{Z}, \ \forall_y \ \mathds{R}, x \neq 2y$
+
+\subsection*{14. d) }
+$\exists_x \in \mathds{Z}, \ \forall_y \ \mathds{R}, \frac{x}{y} \neq 2$
+
+\end{document}

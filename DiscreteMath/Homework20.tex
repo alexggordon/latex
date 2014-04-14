@@ -1,0 +1,64 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 20, Section 4.4: 3, 6, 14
+}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3. A)}
+Since $(1,3) \in R_1$ $R_1$ is not antisymmetric
+\subsection*{3. B)}
+Since $(1,2) \in R_2$ and  $(2,1) \in R_2$ $R_2$ is not antisymmetric
+\subsection*{3. C)}
+Proof. \\
+Let $(x,y) \in R_3$ be given. This means that $xy +  y = y(a+1)$ is odd. If y is odd then $a + 1$ is odd. Since, they are both even though we know this is supposed to be even. This means  $(x,y) \notin R_3$ meaning $R_3$ is antisymmetric
+\subsection*{6. A)}
+$R_1$ is irreflexive, antisymmetric and not transitive. 
+\subsection*{6. B)}
+$R_2$ is irreflexive, antisymmetric and transitive. 
+\subsection*{14. A)}
+\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+\subsection*{14. B)}
+\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\subsection*{14. C)}
+\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+
+\end{document}

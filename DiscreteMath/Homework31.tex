@@ -1,0 +1,61 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 31, Section 6.2: 1, 2, 3, 5, 7, 8, 11, 19}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{1. A)}
+These events are not disjoint, the Ace of Clubs can be in both of them. 
+\subsection*{1. B)}
+These events are not disjoint.
+\subsection*{1. C)}
+These events are disjoint.
+\subsection*{2. A)}
+$\frac{1}{13} + \frac{1}{13} = \frac{2}{13}$
+\subsection*{2. B)}
+$\frac{1}{4} + \frac{6}{52} = \frac{19}{52}$
+\subsection*{2. C)}
+$\frac{6}{52} + \frac{5}{13} = \frac{1}{2}$
+\subsection*{3. A)}
+$\frac{1}{13} + \frac{1}{4} - \frac{1}{52} = \frac{4}{13}$
+\subsection*{3. B)}
+$\frac{1}{13} + \frac{1}{2} - \frac{1}{26} = \frac{7}{13}$
+\subsection*{3. C)}
+$\frac{1}{2} + \frac{1}{13} - \frac{1}{26} = \frac{4}{13}$
+\subsection*{5. A)}
+$\frac{1}{26} $
+\subsection*{5. B)}
+$\frac{1}{16} $
+\subsection*{5. C)}
+$\frac{81}{169} $
+\subsection*{5. D)}
+$\frac{25}{169} $
+
+\subsection*{7.}
+$\frac{7}{18} $
+\subsection*{8.}
+$\frac{1}{3} $
+\subsection*{11.}
+$\frac{15}{64} $
+\subsection*{19. A)}
+$\frac{16}{51} $
+\subsection*{19. B)}
+$\frac{14}{49} $
+\subsection*{19. C)}
+$\frac{16}{49} $
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 24, Section 4.6: 3, 5, 14, 16, 18}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3.}
+$round(x)=\lfloor x+0.5 \rfloor$
+
+\subsection*{5.}
+478 digits.\
+$1000(log_{10}(3)$
+\subsection*{14.}
+2000/3 = 666. Therefore, 666-333 =  333 positive odd multiples of 3
+\subsection*{16.}
+There are 933 - 467 = 466 odd multiples of 3 or 5. 
+\subsection*{18.}
+99!, or 99 factorial. 
+\end{document}

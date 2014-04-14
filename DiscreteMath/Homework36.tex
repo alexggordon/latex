@@ -1,0 +1,42 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 36, Section 7.5: Handout problems, 7}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\section*{Handout}
+\subsection*{A)}
+
+R - 3 - G - 2 - B - 4 - W - W - 1 \\
+R - 1 - B - 4 - G - 2 - W - W - 3
+
+\subsection*{B)}
+R - 3 - B - 2 - G - 4 - W - W - 1\\
+R - 2 - W - W - 3 - G - 4 - B - 1
+
+\section*{7. A)}
+R - 1 - R\\
+B - 4 - G - 2 - B, W - 3 - W\\
+\\
+R - 2 - R\\
+B - 3 - W - 4 - G - 1 - B
+
+\subsection*{7. B)}
+No solutions are available for this problem. 
+
+\end{document}

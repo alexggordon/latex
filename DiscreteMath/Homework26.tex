@@ -1,0 +1,116 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 26, Section 5.1: 2(c,d), 4, 7, 8, 12(b), 14(a,b,c), 15(a,c)}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{2. C)}
+\{aa, ab, ao, bb, bo, oo\}
+\subsection*{2. D)}
+\{aa, ab, ba, ao, oa, bb, bo, ob, oo\}
+\subsection*{4. A)}
+It would be best represented as a set because order is not important. 
+\subsection*{4. B)}
+If the same person will not be holding both offices, then it is a permutation from the club members. 
+\subsection*{4. C)}
+It could be represented as an unordered list just fine. 
+\subsection*{4. D)}
+It is an unordered list taken from the \{Red, green, blue\} set. 
+\subsection*{4. E)}
+I think this one can be represented as either an ordered set or an unordered list. The reason for this is whether or not you can order more than one topping, leading to duplicate items in the list. 
+\subsection*{4. F)}
+This is a permutation. 
+\subsection*{7. A)}
+8
+\subsection*{7. B)}
+3
+\subsection*{7. C)}
+7
+\subsection*{7. D)}
+3
+\subsection*{8. A)}
+4
+\subsection*{8. B)}
+There is not one that is more likely. They're all equally likely. 
+\subsection*{8. C)}
+2
+\subsection*{8. D)}
+6
+\subsection*{8. E)}
+4
+\subsection*{12. A)}
+There are 6 possibilities. 
+\begin{table}
+    \begin{tabular}{|l|l|l|}
+    \hline
+    ~            & White pants   & Black pants   \\ \hline
+    Red shirt    & White, Red    & Black, Red    \\ \hline
+    Green shirt  & White, Green  & Black, Green  \\ \hline
+    Yellow shirt & White, Yellow & Black, Yellow \\ \hline
+    \end{tabular}
+\end{table}
+\subsection*{12. B)}
+There would be 18 entries in this table $(6 \cdot 3)$.
+\subsection*{12. C)}
+For each section, there are $3 \cdot 3 \cdot 3 \cdot 3 = 81$ possibilities. 
+\subsection*{12. D)}
+\begin{table}
+    \begin{tabular}{|l|l|l|}
+    \hline
+    Starts with a & Starts with c & Starts with c \\ \hline
+    aaa           & bbb           & ooo           \\ \hline
+    aab           & bbo           & Black, Green  \\ \hline
+    aao           & boo           & Black, Yellow \\ \hline
+    abb           & ~             & ~             \\ \hline
+    abo           & ~             & ~             \\ \hline
+    aoo           & ~             & ~             \\ \hline
+    \end{tabular}
+\end{table}
+\subsection*{12. E)}
+\begin{table}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    HEAR & RHEA & ARHE & EARH \\ \hline
+    HERA & RAHE & AHER & EHAR \\ \hline
+    HAER & HEAH & AEHR & EHRA \\ \hline
+    HARE & RHAE & ARHE & EAHR \\ \hline
+    HREA & REHA & AERH & ERHA \\ \hline
+    HRAE & RHEA & AREH & ERAH \\ \hline
+    \end{tabular}
+\end{table}
+\subsection*{12. F)}
+There are $24 \cdot 5 = 120$ variations. 
+\subsection*{14. A)}
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\
+\subsection*{14. B)}
+If we add another branch then there are 16 options.
+\subsection*{14. C)}
+There are 6. 
+\subsection*{15. A)}
+$(7\cdot 1), (7\cdot 2), (7\cdot 3),(7\cdot 4), \ .\ .\ . \ ,(7\cdot 14285)$
+\subsection*{15. C)}
+There are 316 entries on the list. 
+
+
+
+\end{document}

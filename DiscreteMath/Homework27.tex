@@ -1,0 +1,58 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 27, Section 5.2: 1, 3, 6, 7, 15, 22, 26(a,b) }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{1. A)}
+$6^{10} = 60,466,176$
+\subsection*{1. B)}
+$5^{10} = 9,765,625$
+\subsection*{3. A)}
+$26 \cdot 26 \cdot 26 \cdot 10 \cdot 10 \cdot1 10 \cdot 10 = 175,760,000$
+\subsection*{3. B)}
+$10 \cdot 10 \cdot 10 \cdot 10 \cdot (26 \cdot 26 \cdot 26 - 97) $
+\subsection*{6. A)}
+$P(17, 3) = 17 \cdot 16 \cdot 15 = 4080 $
+\subsection*{6. B)}
+$16 \cdot 16 \cdot 15 = 3840$
+\subsection*{6. C)}
+$(1 + 1 + 15) + 15 \cdot 16 \cdot 16 = 3855$
+\subsection*{6. D)}
+$1 \cdot 15 \cdot 16 = 240$
+\subsection*{15. A)}
+$50 \cdot 50 \cdot 50 = 125,000$
+\subsection*{15. B)}
+$50 \cdot 49 \cdot 48 = 117,600$
+\subsection*{15. C)}
+$50 \cdot 50 = 2500$
+\subsection*{15. D)}
+$3 \cdot (50 \cdot 49) = 7350$
+\subsection*{22. A)}
+$2^7 = 128$
+\subsection*{22. B)}
+$2^7 = 128$
+\subsection*{22. C)}
+$2^4 = 16$
+\subsection*{22. D)}
+$128 + 128 - 16 = 240$
+\subsection*{26. A)}
+$15 \cdot 16 \cdot 17 \cdot 18 \cdot 19 = 1,395,360$
+\subsection*{26. B)}
+$1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 720$
+\end{document}

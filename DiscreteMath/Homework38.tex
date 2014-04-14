@@ -1,0 +1,35 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 38, Section 7.7: 5, 6(b), 8(b), 9(b), 10}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{5.}
+The degree of the node must be greater than 2, because 1 would clearly not work. Because of this, this means that in order to use every vertex, we must have the same number of nodes in each part, meaning m and n need to be equal. Thus, as long as $m \geq 2$ then we can navigate any $k_{m,m}$
+\subsection*{6. B)}
+$a, d, c, e, b, a$ has the smallest weight at 24. 
+\subsection*{8. B)}
+The greedy algorithm produces $a, e, b, d, c, a, $ with a weight of 29
+\subsection*{9. B)}
+The edge-greedy algorithm adds edges in the order $[a, e], [a, c ], [b ,d ], [b ,c ] $with a cycle $a, d, c, b, e, a$ with the weight of 24
+\subsection*{10.}
+The vertex $a$ leads to the cycle $a, d, b, c, a$ with the weight of 1000 while the cycle weights only 100. 
+ 
+
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 34, Section 7.1: 2, 3, 6(c,d), 9, 10, 20
+}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{2. A)}
+10 nodes total.
+\subsection*{2. B)}
+$d(1) = 1,d(2) = 2,d(3) = 3,d(4) = 5,d(5) = 3,d(6) = 3,d(7) = 3,d(8) = 3,d(9) = 4,d(10) = 3$
+\subsection*{2. C)}
+30 degrees total
+\subsection*{2. D)}
+15 edges total. 
+\subsection*{3. A)}
+8 nodes total.
+\subsection*{3. B)}
+12 edges total.
+\subsection*{3. C)}
+$d(a) = 1,d(b) = 2,d(c) = 4,d(d) = 5,d(e) = 3,d(f) = 3,d(g) = 3,d(h) = 3$
+\subsection*{3. D)}
+\ 
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\subsection*{6. C)}
+9,3,2,4
+\subsection*{6. D)}
+1,2,3,9
+\subsection*{9. A)}
+3,4,8,2,6,4,5,6,7,8,1,2,3,7 is a Eulerian trail
+\subsection*{9. B)}
+This graph has no Eulerian Circuit because there are four vertices of odd degree.
+\subsection*{9. C)}
+$1,2,3,4,5,1,6,2,7,3,8,4,9,5,10,6,7,8,9,10,1$ is a Eulerian circuit
+\subsection*{9. D)}
+$1,2,4,6,8,10,9,7,5,3,1,5,2,6,10,5,9,6,1$ is a Eulerian circuit
+\subsection*{10.}
+There is no Eurlerian trail because there are six vertices of odd degree.
+\subsection*{20.}
+The maximum number of edges in a simple graph is n vertices. The reason for this is because if we write all the edges, each will contain 2 of the n vertices in no order. 
+\end{document}

@@ -1,0 +1,115 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 4, Section 1.5: 3, 4(b,f), 5(d), 11, 14, 15, 22, 25}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3.}
+\begin{tabular}{ l | c || r || r ||}
+q & p $\wedge$ q are lying &$\neg$p \\
+  \hline                        
+  T & T & F\\
+  F & F & F\\
+  T & F & T\\
+  F & F & T\\
+  \hline  
+\end{tabular}
+\subsection*{4. B)}
+\begin{tabular}{| l | c || r | r | r ||}
+p & q & p $\vee$ q &$\neg$ $p \ \vee \ q$ &$\neg p \rightarrow (p\ \vee  \ q)$ \\
+  \hline                        
+  T & T & F & T & F\\
+  T & F & F & T & F\\
+  F & T & T & T & T\\
+  F & F & T & F & T\\
+  \hline  
+\end{tabular}
+\subsection*{4. F)}
+\begin{tabular}{ | r | r | c || r | r | r ||}
+p & q & r & p $\vee$ q &$\neg$ $p \ \vee \ q$ &$\neg p \rightarrow (p\ \vee  \ q)$ \\
+  \hline                        
+  T & T & F & T & F & F\\
+  T & F & F & T & F & F\\
+  F & T & T & T & T & T\\
+  F & F & T & F & T & T\\
+  \hline  
+\end{tabular}
+\subsection*{5. D)}
+\begin{tabular}{ | r | r | r || r |l |}
+p & q & r & $ p \rightarrow (q \rightarrow r) $ & $p \wedge q \rightarrow r$   \\
+  \hline                        
+  T & T & T & T & T\\
+  T & T & F & F & F\\
+  T & F & T & T & T\\
+  T & F & F & T & T\\
+  F & T & T & T & T\\
+  F & T & F & F & F\\
+  F & F & T & T & T\\
+  F & F & F & T & T\\
+  \hline  
+\end{tabular} \\
+\\
+These statements are equivalent
+\subsection*{11. A)}
+True
+\subsection*{11. B)}
+False. If x = 11, then x is not $<$ 10
+\subsection*{11. C)}
+True
+\subsection*{11. D)}
+True
+\subsection*{11. E)}
+True, because it is not False. 
+\subsection*{14. A)}
+D= All integers that end in 5\\
+B(n) = $5\mod{n} = 0$ \\
+$\forall_n \in D, B(n)$\
+\subsection*{14. B)}
+D= All integers that end in 3\\
+B(m) = $3\mod{n} = 0$ \\
+$\forall_m \in D, B(m)$\
+\subsection*{14. C)}
+D= Multiples of 5
+B(n) = $n^2 - 1$ = multiple of 3 \\
+$\forall_n \in D, B(n)$\
+\subsection*{14. D)}
+D= Positive real numbers greater than $\sqrt{2}$\\
+B(x) = $2/x > \sqrt{2}$\\
+$\forall_x \in D, B(x)$\
+\subsection*{15.}
+A and D are true. 
+\subsection*{22. A)}
+If n is a positive integer and n is even then for all n $\frac{1}{n} < 1$ 
+\subsection*{22. B)}
+If a and b are positive integers and $a - b$ is odd then for all a and b $a^2 \neq 2b^2$
+\subsection*{22. C)}
+If a and b are positive integers and a and b are even then for all a and b $a/b \neq 1 + b/a$
+\subsection*{22. D)}
+If there is a right triangle with perimeter equal to three times the length of one leg, then for all triangles that have a perimeter not equal to three times the length of one leg, they are not right triangles. 
+\subsection*{25. A)}
+If you do attend the concert you won't get and F for the course.
+\subsection*{25. B)}
+We won't go if you go.
+\subsection*{25. C)}
+If you do eat your breakfast, you won't go hungry. 
+\subsection*{25. D)}
+If a quadrilateral is not a square, then it does not have four equal sides and four equal angles.
+\subsection*{25. E)}
+If a triangle does not either have two equal sides or two equal angles, then it is not an isosceles triangle.
+
+\end{document}
