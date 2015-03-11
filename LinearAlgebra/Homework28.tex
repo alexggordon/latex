@@ -1,0 +1,45 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 1, Section 5.2: 21, 22, 23}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{21. A)}
+False. If a matrix is not invertible then its determinant is zero. By the invertible Matrix Theorem, then 
+\subsection*{21. B)}
+False. This contradicts the properties of a determinant (see theorem 3).
+\subsection*{21. C)}
+True. This contradicts the properties of a determinant (see theorem 3).
+\subsection*{21. D)}
+False. Example 4 proves this wrong. 
+
+\subsection*{22. A)}
+False. When A is a 3 x 3 matrix, det A turns out to be the volume of the parallelepiped determined by the columns of $a_1, a_2, a_3$
+\subsection*{22. B)}
+False. This contradicts the properties of a determinant (see theorem 3).
+\subsection*{22. C)}
+True. In general, the algebraic multiplicity of an eigenvalue is its multiplicity as a root of the characteristic equation. 
+\subsection*{22. D)}
+False. The slightly incorrect warning on page 277 shows this. 
+
+\subsection*{23.}
+If $A = QR$, with Q invertible, and if $A_1 = RQ$ then $A_1 = Q^{-1}QRQ = Q^{-1} AQ$ which shows that $A_1$ is similar to A
+
+
+
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 7, Section 1.7: 6, 10, 12, 18, 21, 29, 36, 37}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{6.}
+$\begin{bmatrix} -4&-3&0&0&0 \\ 0&-1&5&0 \\ 0&0&-15&0 \\ 0&0&0&0  \end{bmatrix}$\\
+
+As we can see the three basic variables give the trivial solution and no free variable. Therefore the columns of A are linearly independent. 
+\subsection*{10. A)}
+$v_3$ in span $\{v_1, v_2\}$\\
+The augmented matrix is:\\
+$\begin{bmatrix} 1&-3&2 \\ -3&9&-5 \\ -5&15&h  \end{bmatrix}$\\
+The reduced matrix is:\\
+$\begin{bmatrix} 1&-3&2 \\ 0&0&1 \\ 0&0&10+h  \end{bmatrix}$\\
+As we can see, $0 = 1$ is not possible, therefore the system has no solution to this equation. 
+\subsection*{10. B)}
+The reduced matrix is:\\
+$\begin{bmatrix} 1&-3&2&0 \\0&0&1&0 \\ 0&0&10+h&0  \end{bmatrix}$\\
+If the system has a non trivial solution then $\{v_1, v_2, v_3\}$ is linearly dependent. For non-trivial solutions, $10+h = 0$ means that $h = -10$. $x_2$ is a free variable, which means we have a non-trivial solution. 
+\subsection*{12.}
+The system is linearly dependent. Therefore the system has a non-trivial solution and $h = -18$
+\subsection*{18.}
+Linearly dependent. 
+\subsection*{21. A)}
+Since the homogeneous system $Ax = 0$ always has the trivial solution, that means that regardless of A, to possess linearly independent columns, $Ax = 0$ always has a trivial solution. This means the statement is not true. 
+\subsection*{21. B)}
+If we consider that linear combinations of all vectors then set $S = 0$, then there exists at least one nonzero scalar to satisfy the equation. \\
+Since that means every vector in the set $S$ can be left on one side of the equation and all other vectors are on the other side that shows that S is a linear combination of the other vectors, meaning the statement is true. \\
+\subsection*{21. C)}
+The columns of any 4x5 matrix are linearly dependent. The statement is true. 
+\subsection*{21. D)}
+If x and y are linearly independent then z is in the span of $\{x,y\}$. \\
+Therefore any one of the conditions are true (they can't be true simultaneously) 
+\subsection*{36.}
+By theorem 7, it is true. 
+\subsection*{37.}
+The given set of vectors $\{v_1, v_2, v_3\}$ are linearly dependent and so the set of vectors $\{v_1, v_2, v_3, v_4\}$ are linearly dependent, hence the statement is true. 
+
+
+
+
+\end{document}

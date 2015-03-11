@@ -1,0 +1,37 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 30, Section 5.4: 7, 12, 14, 24, 25}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{7.}
+Since $T(b_1) = t(1) = 3 + 5t, (T(b_1))_B = \begin{bmatrix}  3 \\5 \\ 0  \end{bmatrix}.$ also, since $T(b_2) = T(t) = -2t + 4t^2, (T(b_2))_B = \begin{bmatrix}  0 \\-2 \\ 4  \end{bmatrix},$ and $T(b_3) = T(t^2) = t^2, (T(b_3))_b = \begin{bmatrix}  0 \\ 0 \\ 1  \end{bmatrix}$. Thus the matrix representation of T relative to the basis b is $\begin{bmatrix}  3 & 0 & 0  \\5 &-2 & 0 \\ 0 & 4 & 1 \end{bmatrix}$
+\subsection*{12.} 
+The eigenvalues of the matrix are 1 and 3. \\
+For $\lambda = 1, A - I = \begin{bmatrix}  -1 & 1 \\ -3 & 3 \end{bmatrix}.$ The basis vector for the eigenspace, with $x_2$ being free, is $v_1 = \begin{bmatrix}  1\\1 \end{bmatrix}$\\
+For $\lambda = 3, A - I = \begin{bmatrix}  -3 & 1 \\ -3 & 1 \end{bmatrix}.$ The basis vector for the eigenspace, with $x_2$ being free, is $v_1 = \begin{bmatrix}  1\\1 \end{bmatrix}$\\
+\subsection*{14.}
+
+\subsection*{24.}
+If $A = PBP^{-1}$ then rank $A =$ rank $P(BP^{-1} =$ rank $BP^{-1}$. Also, Rank $BP^{-1} = $ rank $B$, since $p^{-1}$ is invertible. Thus, rank$A = $rank$B$.  
+\subsection*{25.}
+IF $A = PBP^{-1}$ then by the trace property $tr(A) = tr(P^{-1}PB) = tr(IB) = tr(B).$ if B is diagonal, then the diagonal entries of B must be the eigenvalues of A, by the diagonalization theorem. So, tr$a = $ tr $b=$ the sum of the eigenvalues of A. 
+
+
+
+\end{document}

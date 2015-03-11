@@ -1,0 +1,60 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 1, Section 1.2, 5, 16, 18, 19, 23–25, 28–31 }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{5.}
+$ \begin{bmatrix} \blacksquare & * \\ 0&\blacksquare \end{bmatrix} $,
+$ \begin{bmatrix} \blacksquare & * \\ 0&0 \end{bmatrix} $,
+$ \begin{bmatrix} 0 &\blacksquare \\ 0&0 \end{bmatrix} $
+
+\subsection*{16. A)}
+This system is inconsistent because $x_1 = 0 and x_2 = 0$
+\subsection*{16. B)}
+This system is consistent and has infinitely many solutions
+
+\subsection*{18.}
+The matrix in REF (Reduced Echelon Form)
+$ \begin{bmatrix} 1 &-3 & 1 \\ 0&1 & -\frac{1}{3} \end{bmatrix} $
+The system is consistent and the REF does not depend on h. H can then take any value. 
+\subsection*{19. A)}
+The system is unique when $h = 2 $ and $k \neq 8$
+\subsection*{19. B)}
+The system is inconsistent when $h \neq 2 $ 
+\subsection*{19. C)}
+The system is inconsistent when $h = 2 $ and $k = 8$
+\subsection*{23.}
+$ \begin{bmatrix} 1 &0 & 0&0&a \\ 0 &1 & 0&0&b \\ 0 &0 & 1&0&c \\ 0 &0 & 0&1&d \end{bmatrix} $
+thus $x_1$ through $x_4$ equals a unique $a$ through $b$
+\subsection*{24.}
+The augmented matrix has a pivot in the rightmost column, thus the system is not consistent. 
+\subsection*{25.}
+If the augmented matrix has a pivot in every row, then the matrix is in echelon form by definition and if a matrix is in echelon form by definition it is consistent. 
+\subsection*{28.}
+Every column in the matrix except the rightmost column is a pivot column and the rightmost column is not a pivot column. 
+\subsection*{29.}
+A system of linear equations with fewer equations that unknowns is sometimes called and undetermined system. 
+The undetermined system is consistent if it has infinitely many solutions. Since an undetermined system always has more variables than equations, there cannot be more basic variables than equations, meaning there is at least one free variable. Therefore, because of the free variable the system is consistent. 
+\subsection*{30.}
+Since $0 \neq 7$, the system is inconsistent. 
+\subsection*{31.}
+Yes it can be consistent. 
+
+
+\end{document}

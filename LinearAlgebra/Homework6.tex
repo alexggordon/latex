@@ -1,0 +1,67 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage,stmaryrd}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 6, Section 1.6: 8, 13, 14}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{8.}
+Converting this equation to an augmented matrix results in the form:\\
+\\
+$\begin{bmatrix} 3&0&-2&0&0&0 \\ 0&-9&1&0&0&0 \\ 0&0&1&-9&6&0 \\ 0&0&0&-9&9&0  \end{bmatrix}$\\
+\\
+Then, converting into equations we realize that $x_5$ is the free variable. The other variables are: \\
+$x_4 = x_5\\$
+$x_3 = 3x_5\\$
+$x_2 = x_5\\$
+$x_1 = 2x_5$
+Since the coefficients must be integers, the equation results in \\
+$2H_3O + CaCO_3 \shortrightarrow 3H_2O + Ca + CO_2$
+\subsection*{13. A)}
+Writing the equations as Node = Flow in = Flow out \\
+$A = x_2 + 30 = x_1 + 80 $\\
+$B = x_3 + x_5 = x_2 + x_4 $\\
+$C = x_6 + 100= x_5 + 40 $\\
+$D = x_4 + 40 = x_6 + 90 $\\
+$E = x_1 + 60= x_3 +20$\\
+Total Flow $ = 230 = 230 $\\ 
+Solving these equations, we get \\
+$x_1 = x_3 - 40$\\
+$x_2 = x_3 + 10$\\
+$x_4 = x_6 +50$\\
+$x_5 = x_6 + 60$\\
+$x_3, x_6$ are free\\
+\subsection*{14.}
+Converting this equation to an RREF matrix results in the form:\\
+\\
+$\begin{bmatrix} 1&0&0&0&1&80 \\ 0&1&0&-1&-1&-180 \\ 0&0&1&-1&-1&90 \\ 0&0&0&0&0&0  \end{bmatrix}$
+\subsection*{14. A)}
+$x_1 = 80 - x_5$\\
+$x_2 =x_4 + x_5 -180$\\
+$x_3 = x_4 + x_5 -90$\\
+$x_4 = x_4$\\
+$x_5 = x_5$\\
+\subsection*{14. B)}
+$x_1 = 80$\\
+$x_2 =x_4 -180$\\
+$x_3 = x_4  -90$\\
+$x_4 = x_4$\\
+\subsection*{14. C)}
+180
+
+
+\end{document}

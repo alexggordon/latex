@@ -1,0 +1,70 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 4, Section 1.4: 4, 5, 14, 17, 19, 21, 22, 24, 31, 35}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{4. A)}
+$  \begin{bmatrix} 3 \\ 8 \end{bmatrix} $
+\subsection*{4. B)}
+$  \begin{bmatrix} 3 \\ 8 \end{bmatrix} $
+\subsection*{5.}
+$  \begin{bmatrix} -4\\1  \end{bmatrix} $
+\subsection*{14. A)}
+$ x_1  \begin{bmatrix} 2\\0\\1  \end{bmatrix} + x_2 \begin{bmatrix} 5\\1\\2  \end{bmatrix} + x_3 \begin{bmatrix} -1\\-1\\0  \end{bmatrix} = \begin{bmatrix} 4\\-1\\4  \end{bmatrix}$
+This, this is a matrix equation. 
+\\
+\\
+Converting this to REF gives 
+\\
+\\
+$\begin{bmatrix} 2& 0& 4& 9 \\ 0& 1& -1& -1 \\ 0 & 0 & 0 & 3  \end{bmatrix}$
+\\
+\\
+Once this is converted to a linear system we can see that the final row results in $0 = 3$, which is not possible so the system is inconsistent, meaning u does not span the columns of A. 
+\subsection*{17.}
+Since there is no pivot position in the 4th row of A, then by theorem 4, the equation $Ax = b$ does not have a solution for each b in the domain of $R^4$.
+
+This goes on to show that statement D has to be false
+\subsection*{19.}
+Since statement D is false, then all 4 statements have to be false. Therefore, since not all vectors in $R^4$ can be written as a linear combination of the columns of A. 
+\subsection*{21.}
+The matrix $  \begin{bmatrix} v_1&v_2&v_3  \end{bmatrix} $ does not have a pivot in every row, thus by Theorem 4, $  \begin{bmatrix} v_1&v_2&v_3  \end{bmatrix} $ does not span $R^4$.
+\subsection*{22.}
+Since the system is consistent  $  \begin{bmatrix} v_1&v_2&v_3  \end{bmatrix} $ does span $R^3$.
+\subsection*{24. A)}
+ $Ax = b$
+Since this is a vector equation and  $Ax = b$, then the matrix equation and the vector equation have the same x values. Therefore, they have the same solution set. 
+\subsection*{24. B)}
+Since the system is consistent, then the x values exists. Therefore, any b can be expressed by $b = a_1x_1 + a_2x_2.....$. This means that b is spanned by the columns of A. 
+\subsection*{24. C)}
+False
+\subsection*{24. D)}
+False
+\subsection*{24. E)}
+True
+\subsection*{24. F)}
+False
+\subsection*{31. }
+Since a does not have a pivot position in every row, the equation  $Ax = b$ cannot be consistent for all b in $R^M$
+\subsection*{35.}
+Suppose that y and z satisfy  $Ay = z$. This means that $4z = 4Ay$. Since that fits the definition of a scalar in an $mn$ matrix, then if we replace the constant scalar we get $4(Ay) = A(4y)$. This shows that 4y is a solution, thus making it consistent. 
+
+
+
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 1, Section  1.1: 3, 5, 9, 11, 16, 17, 21, 23, 26, 30}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3.}
+The intersection point is (2,1)
+\subsection*{5.}
+1) Replace Row 2 by the sum of Row 2 and Row 3 times -4
+2) Replace Row 1 by the sum of Row 1 and 3 times Row 3
+\subsection*{9.}
+The solution set of the original system is (16, 21, 13, 4)
+\subsection*{11.}
+Inconsistent
+\subsection*{16.}
+Consistent
+\subsection*{17.}
+Inconsistent
+\subsection*{19.}
+$h \neq 2$
+\subsection*{21.}
+It is augmented for every value of $h$ 
+\subsection*{23. A}
+T
+\subsection*{23. B}
+F
+\subsection*{23. C}
+T
+\subsection*{23. D}
+T
+\subsection*{26.}
+C and D are both real numbers
+
+
+
+\end{document}

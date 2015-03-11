@@ -1,0 +1,37 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 9, Section 1.9; 8, 26, 30, 35 }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{8.}
+The matrix for the transformation is
+$\begin{bmatrix} 0&-1 \\ -1&2  \end{bmatrix}$\\
+\subsection*{26.}
+
+\subsection*{30.}
+By theorem 12, the columns of the standard matrix A must span $ \mathbb{R}^3$. 
+By theorem 4, the matrix must have a pivot in each row. 
+There are four possibilities for the echelon form, however they result in an inconsistent system.  Below is one. 
+$\begin{bmatrix} 1& * & * & * \\ 0&1 & * & * \\ 0 & 0 & 0 & 1 \end{bmatrix}$\\ where the asterisk can be any value. 
+\subsection*{35. A)}
+If $ T : \mathbb{R}^n \rightarrow  \mathbb{R}^m maps  \mathbb{R}^n onto  \mathbb{R}^M, $ then its standard matrix A has a pivot in each row, by theorem 12 and 4. \\
+This means that A must have at least as many columns as rows, so $ \mathbb{R}^m \leq  \mathbb{R}^n$. When T is one to one, A must have a pivot in each column by theorem 12, so $ \mathbb{R}^m \geq  \mathbb{R}^n$. 
+
+
+\end{document}

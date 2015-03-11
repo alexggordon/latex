@@ -1,0 +1,43 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 10, Section 2.1; 6, 19–23, 27, 28
+ }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{6.}
+$\begin{bmatrix} -5&22 \\ 12&-22 \\ 3&-2   \end{bmatrix}$\\
+\subsection*{19.}
+$ Ab_3 = ab_1 + Ab_2 $ since $A = A.$Therefore $b_3 = b_1 + b_2$
+\subsection*{20.}
+$if Ab_1 = Ab_2, $ then if you divide both sides by A then $b_1 = b_2$
+\subsection*{21.}
+Let bp be the last column of $B$. By hypothesis, the last column of $AB$ is zero. Thus, $Ab_p = 0$. However, $b_p$ is not the zero vector, because $B$ has no column of zeros. Thus, the equation $Ab_p = 0$ is a linear dependence relation among the columns of A, and so the columns of A are linearly dependent.
+\subsection*{22.}
+If the columns of $B$ are linearly dependent, then there exists a nonzero vector x such that $B_x = 0$. From this, $A(Bx) = A0$ and $(AB)x = 0$ (by associativity). Since x is nonzero, the columns of $AB$ must be linearly dependent.
+\subsection*{23.}
+If $x$ satisfies $Ax=0$, then $CAx=C0=0$ and so $I_nx=0$ and $x=0$.This means that the equation $Ax=0$ has no free variables so every variable is a basic variable and every column of A is a pivot column meaning each pivot is in a different row, A must have at least as many rows as columns.
+\subsection*{27.}
+$uv^T = \begin{bmatrix} -2a&-2b&-2c \\ 3a&3b&3c \\ -4a&-4b&-4c   \end{bmatrix}$\\
+$vu^T = \begin{bmatrix} -2a&3a&-4a \\ -2b&3b&-4b \\ -2c&3c&-4c   \end{bmatrix}$\\
+\subsection*{28.}
+By Theorem 3, $(uv^T)^T = (v^T)^Tu^T = vu^T.$
+
+
+
+\end{document}

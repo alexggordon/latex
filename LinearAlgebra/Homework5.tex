@@ -1,0 +1,105 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 5, Section 1.5: 1, 4, 6, 15, 18, 24, 25, 26, 28-31 }
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{1.}
+RREF Matrix
+$\begin{bmatrix} 1& 0& 17/8& 0 \\ 0& 1& -3/4& 0 \\ 0 & 0 & 0 & 0  \end{bmatrix}$
+\\
+\\
+$x_1 = -17/8, x_2 = 3/4$ and $x_3$ is a free variable. 
+
+This means that $Ax = 0$ has the form:
+$x = \begin{bmatrix} x_1 \\ x_2\\  x_3  \end{bmatrix} = x_3\begin{bmatrix} -17/8 \\ 3/4\\  1  \end{bmatrix}$
+
+
+\subsection*{4.}
+RREF Matrix
+$\begin{bmatrix} 1& -3/5& 2/5& 0 \\ 0& 1& -16/29& 0  \end{bmatrix}$
+\\
+\\
+$x_2 = 16/29 (x_3), x_1 = 3/5(x_2)-2/5(x_3)$. Clearly $x_3$ is a free variable which means that the given system $Ax = 0$ has a non-trivial solution
+
+\subsection*{6.}
+RREF Matrix
+$\begin{bmatrix} 1& 2& -3& 0 \\ 0& 1& -1& 0 \\ 0&0&0&0 \end{bmatrix}$
+\\
+\\
+$x_2 = x_3, x_1 = x_3$. The general solution of $Ax = 0$ has the form:
+$X = x_3\begin{bmatrix} 1\\ 1\\  1  \end{bmatrix}$
+
+\subsection*{15.}
+The general solution takes the form:
+$X = x_2\begin{bmatrix} -5\\ 1\\  0  \end{bmatrix} + x_3\begin{bmatrix} 3\\ 0\\  1  \end{bmatrix}$
+Now, solving for $x_1$ in terms of the free variables, the general solution of $x_1$ is 
+$x_1 = -2-5x_2 + 3x_3$. 
+\\
+\\
+This means the general solution is:
+$X = x_1\begin{bmatrix} -2\\ 0\\  0  \end{bmatrix} + x_2\begin{bmatrix} -5\\ 1\\  0  \end{bmatrix} + x_3\begin{bmatrix} 3\\ 0\\  1  \end{bmatrix}$
+\subsection*{18.}
+
+
+RREF Matrix
+$\begin{bmatrix} 1& 2& -3& 5 \\ 0& 1& -1& -1 \\ 0&0&0&0 \end{bmatrix}$
+\\
+\\
+$x_1 = 5-2x_2 + 3x_3, x_2 = -1 + x_3, x_1 = 7+x_3$. The general solution of $Ax = 0$ has the form:
+$X = \begin{bmatrix} 7\\ -1\\  0  \end{bmatrix} + \begin{bmatrix} 1\\ 1\\  1  \end{bmatrix}$
+\subsection*{24. A)}
+The statement is false. A system of linear equation is said to be homogeneous if it can be written in the form $Ax = 0$. 
+\subsection*{24. B)}
+The statement is false. If x is a non-trivial solution of $Ax = 0$, then at least one entry in x is non-zero. 
+\subsection*{24. C)}
+The statement is true. The effect of adding p to a vector v is to move v in a direction parallel to the line through p and o. 
+\subsection*{24. D)}
+The statement is true. If x = 0 and b = 0 then  $Ax = 0$. 
+\subsection*{24. E)}
+The statement is true. If $Ax = b$ is consistent, then the solution set of $Ax = b$ is obtained by translating the solution set of $Ax = 0$
+\subsection*{25. A)}
+
+\subsection*{25. B)}
+\subsection*{25. C)}
+
+\subsection*{26. }
+Given A, in which it is a 3x3 Zero Matrix, 
+let $x = \begin{bmatrix} x_1&x_2&x_3 \end{bmatrix} \in R^3$
+
+now, since $0 + 0 = 0, $ the the matrix equals zero. 
+Therefore, the solution set is all vectors in $R^3$
+\subsection*{28. A)}
+\subsection*{28. B)}
+
+\subsection*{29. A)}
+A has three pivot positions. A does not have pivot positions in all four rows. One row not having pivot positions means that the equation $Ax = b$ does not have a solution for every possible b in $R^3$.
+\subsection*{29. B)}
+A has three pivot positions. A does not have pivot positions in all four rows. One row not having pivot positions means that the equation $Ax = b$ does not have a solution for every possible b in $R^3$.
+\subsection*{30. A)}
+A is a 2x5 matrix and has two pivot positions. Hence it is non-trivial. 
+\subsection*{30. B)}
+A has 2 pivot positions and A has a pivot in every row, so the equation $Ax = b$ has a solution for every b. 
+\subsection*{31. A)}
+Non-trivial
+\subsection*{31. B)}
+\subsection*{31. C)}
+\subsection*{31. D)}
+
+
+\end{document}

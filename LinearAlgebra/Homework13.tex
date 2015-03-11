@@ -1,0 +1,41 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 13, Section 2.4; 1, 4, 5, 10, 12, 15, 19, 20}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{1.}
+$ \begin{bmatrix} A & B \\ EA + C & EB + D   \end{bmatrix}$
+\subsection*{4.}
+$ \begin{bmatrix} W& X \\ -EW + Y& -EX + Z   \end{bmatrix}$
+\subsection*{5.}
+$Y = B^{-1}A, X = -B^{-1}A,  Z = C$
+\subsection*{10.}
+$Q = -B + DA, P = -A, R = -D$
+\subsection*{12. A)}
+False. Both BA and AB are defined, but they have different dimensions. $AB = \begin{bmatrix} A_1B_1& A_1B_2 \\ A_2B_1 & A_2B_2   \end{bmatrix}$ 
+\subsection*{12. B)}
+False. $R^T$ and $Q^T$ have to be switched for it to be correct. 
+\subsection*{15.}
+$G_{k+1} = G_k + X_k + 1 X^{T}_{k+1}$
+\subsection*{19.}
+$W(s) = I = C(A - sI)^-1 B$
+\subsection*{20.}
+The compliment is $I_m - C(A - BC - sI_n)^{-1}$
+
+\end{document}

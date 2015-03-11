@@ -1,0 +1,48 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{The Last Homework Item I'll Turn In During College, Section 6.5: 17, 18}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Freedom}
+\subsection*{17. A)}
+True. If $m x n$  and B is in $R^M$, a least squares solution of $Ax = b$ is an $\hat{x} $ in $R^n$. 
+\subsection*{17. B)}
+True. The projection gives us the best approximation
+\subsection*{17. C)}
+False. The inequality is facing the wrong way. 
+\subsection*{17. D)}
+True. This is how we can find the least squares solutions
+\subsection*{17. E)}
+True. Then $A^TA $ is invertible so we can solve $A^TAx = A^Tb $ for x by taking the inverse.  
+
+\subsection*{18. A)}
+True. See the paragraph after the least squares solution. 
+\subsection*{18. B)}
+False. If $\hat{x}$ is the least squares solution then $A \hat{x}$ is the point in the column space closest to b. 
+\subsection*{18. C)}
+True. See the discussion following equation 1
+\subsection*{18. D)}
+False. The formula applies only when the columns of A are linearly independent.  
+\subsection*{18. E)}
+False. See the comments after example 4.
+\subsection*{18. F)}
+False. Eq. (7) numberical note. 
+
+
+
+\end{document}

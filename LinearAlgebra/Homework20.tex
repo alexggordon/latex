@@ -1,0 +1,42 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 20, Section 4.2: 4, 21, 26}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{4.}
+$x_4 = free, \  x_3 = 0, x_2 = 1, 0, x_1 = 3, 0$
+$ \begin{bmatrix}  3  \\  1 \\ 0 \\ 0  \end{bmatrix} \ , \  \begin{bmatrix}  0  \\  0 \\ 0 \\ 1 \end{bmatrix}$
+\subsection*{21. }
+The vector $\begin{bmatrix}  1  \\  4  \end{bmatrix} $ is in Null A and Column A is zonzero and is a vector in Column A 
+\subsection*{26. A)}
+True. A subspace is a vector space by itself
+\subsection*{26. B)}
+True through theorem 3
+\subsection*{26. C)}
+False. Col A $= \{b : b = Ax$ for some $ X$ in $R^n$
+\subsection*{26. D)}
+True. The kernal of such a T is the set of all u in V such that $T(u)  = 0$
+\subsection*{26. E)}
+True. A subspace is a vector space by itself
+\subsection*{26. F)}
+True. 
+
+
+
+\end{document}

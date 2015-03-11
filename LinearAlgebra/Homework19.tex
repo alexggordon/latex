@@ -1,0 +1,41 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 19 , Section 4.1: 4, 19, 24}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{4.}
+ABC is not closed under vector addition is because when $ \begin{bmatrix}  1 \\  0   \end{bmatrix}$ is added to the $ \begin{bmatrix}  1 \\  1  \end{bmatrix}$ it gives the vector $ \begin{bmatrix}  2 \\  1   \end{bmatrix}$ which is not in the space. 
+\subsection*{19.}
+$\frac{c_1(cos(wt))}{c_2(sin(wt))} = c_1(\frac{cos(wt)}{sin(wt)}) + c_2(\frac{cos(wt)}{sin(wt)})$
+\subsection*{24. A)}
+True by the definition of vector space
+\subsection*{24. B)}
+True because of multiplication by a scalar
+\subsection*{24. C)}
+True because if a vector space is a subspace if they have the same zero vector
+\subsection*{24. D)}
+False because $R^2$ doesn't have a zero vector
+\subsection*{24. E)}
+False because there is nothing to say that U and V represent all the elements of H 
+
+
+
+
+
+\end{document}

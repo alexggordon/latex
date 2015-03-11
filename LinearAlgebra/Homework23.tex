@@ -1,0 +1,47 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 28, Section 4.5: 3, 9, 14, 20, 22, 25}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3.}
+This subspace is $H = $Span $\{v_1, v_2, v_3\}, $ where $v_1 =  \begin{bmatrix} 0 \\ 1 \\ 0 \\ 1  \end{bmatrix}, v_2 =  \begin{bmatrix} 0 \\ -1 \\ 1 \\ 2  \end{bmatrix},$ and $v_3 =  \begin{bmatrix} 2 \\ 0 \\ -3 \\ 0  \end{bmatrix}$. Theorem 4 in 4.3 shows that the columns of this set are linearly independent. $v_1 \neq 0, v_2$ is not a multiple of $v_1$ and since its first entry is not zero, $v_3$ is not a linear combination of $v_1$ or $v_2$ Thus, this set is a basis for H and the dimension of the subspace is 3. 
+\subsection*{9.}
+This subspace is $H = \begin{bmatrix} a \\ b \\ a  \end{bmatrix}: a, b $ in $R$ = Span $\{v_1, v_2 \}$ and where $v_1 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}$ and $v_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$. Since $v_1$ and $v_2$ are not multiples of each other, they are linearly independent and are a basis for H. This means the dimension of H is 2. 
+\subsection*{14.}
+The matrix is in echelon form. There are two pivot columns so the dimension of Col $A$ is 3. Since there are three columns without pivots, the equation $Ax = 0 $ has three free variables thus the dimension of Nul $A$ is 2. 
+\subsection*{20. A)}
+False. the set $R^2$ is not even a subset of $R^3$. 
+\subsection*{20. B)}
+False. The number of free variables is qual to the dimension of Null A. 
+\subsection*{20. C)}
+False. A basis could still have only finitely many elements, which would make the vector space finite. 
+\subsection*{20. D)}
+False. The set S must also have n elements. 
+\subsection*{20. E)}
+True. The subspaces can only be subsets of themselves. 
+
+\subsection*{22.}
+The matrix whose columns are the coordinate vectors of polynomials with the standard basis of $P_3$ is:
+$\begin{bmatrix} 1 & 1 & 2 & 6 \\ 0 & -1 & -4 & -18 \\ 0 & 0 & 1 & 9 \\ 0 & 0 & 0 & -1  \end{bmatrix}$. This matrix has 4 pivots so it's columns are linearly independent. Since their coordinate vectors for a linearly independent set, the polynomials themselves are linearly independent in $p_3$. The Basis Theorem then states they form a basis for $P_3$.
+\subsection*{25.}
+Suppose that S Spans V and that S contains fewer than n vectors. This means that by the spanning set theorem, some subset of $S'$ of S is a basis for V. Since S contains fewer than n vectors, and $S'$  is a subset of S, $S'$ also contains fewer than n vectors. Thus there is a basis $S'$ for V with fewer than n vectors. However, this is inpossible because of theorem 10, because dimV = n. Thus S cannot span V. 
+
+
+
+\end{document}

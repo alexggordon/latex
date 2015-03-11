@@ -1,0 +1,41 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 21, Section 4.3: 3, 4, 7, 10, 15, 25}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{3.}
+This set does not form a basis for $R^3$. The set is linearly dependent and does not span $R^3$
+\subsection*{4.}
+The determinant equals 1, so these vectors are linearly independent. These vectors form a basis for $R^3$. 
+\subsection*{7. }
+This set does not form a basis for $R^3$ because it is linearly independent and  $m \geq n$. 
+\subsection*{10.}
+The RREF is $ \begin{bmatrix}  1 & 0 & 0 & 2 & 3 & 0 \\ 0 & 1 & 0 & -1 & -2 & 0 \\ 0 & 0 & 1 & 0 & -2 & 0  \end{bmatrix} $. The span is then $ \begin{bmatrix}  -2 \\ 1 \\ 0 \\ 1 \\ 0  \end{bmatrix} $, $ \begin{bmatrix}  -3 \\ 2 \\ 2 \\ 0 \\ 1  \end{bmatrix} $
+\subsection*{15.}
+The RREF is $ \begin{bmatrix}  1 & 0 & 2 & 2 & 3 \\ 0 & 1 & -2 & -1 & -1 \\ -2 & 2 & -8 & 10 & -6 \\ 3 & 3 & 0 & 3 & 9   \end{bmatrix} $. This reduces to \\
+$ \begin{bmatrix}  1 & 0 & 2 & 2 & 3 \\ 0 & 1 & -2 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \end{bmatrix}    $
+\subsection*{25.}
+Yes it is a basis a typical element in H is $sv1 + (t-s)v2 + sv3$. 
+
+we can re-write this as $s(v1+v3) + (t-s)(v2), so \{v1+v3,v2\}$ is a basis for H. 
+
+the problem is that the span of \{v1,v2,v3\} is much bigger than H, it is all of $R^3$. 
+This means that just because it is linearly independent, it is not the basis for H. Since the basis of the subspace is not isomorphic to R or $R^2$, it's too big for the span. 
+
+\end{document}

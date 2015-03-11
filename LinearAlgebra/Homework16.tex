@@ -1,0 +1,36 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 16, Section 2.7: 2, 3, 9, 10, 15}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{2.}
+$\begin{bmatrix} -1 & 0\\  0 & 1   \end{bmatrix} \begin{bmatrix} 4 & 2 & 5\\  0 & 2 & 3  \end{bmatrix} = \begin{bmatrix} -4 & -2 & -5\\  0 & 2 & 3   \end{bmatrix}$
+\subsection*{3.}
+First, we have to start with the translating the matrix, and then we need to multiply it by the matrix that will rotate it 90 degrees. After these multiplications, the resulting matrix is computed. 
+$\begin{bmatrix}0 & -1 & -1\\ 1 & 0 & 2 \\ 0 & 0 & 1   \end{bmatrix}$
+\subsection*{9.}
+The two possibilities result in drastically different results. Multiplying the 2 x 2 matrices first, (8 multiplications) and then multiplying it by D (total of 408 multiplications) is drastically different than multiplying A(DB) (DB is 200, and then by A is 800). Obviously, the first way is the better way to multiply. If we were doing this on a 1080 x 1920 resolution screen, at 60 frames per second, it would save millions of computations over the course of just a minute. 
+\subsection*{10.}
+D commutes with R but not with T; R does not commute with T. 
+\subsection*{15.}
+(12, -6, -3)
+
+
+
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 14, Section 2.5: 12, 19, 24}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{12.}
+$ \begin{bmatrix} 1&0&0 \\ 2&1&0 \\ -3&2&1 \end{bmatrix}$
+\subsection*{19.}
+The equation is the Schur complement on the system matrix. $W(s) = I_m - C(A - sI_n)^{-1}B$
+\subsection*{24.}
+Since $Q$ is a square and  $Q^T Q = 1$, $Q$ then we know that Q is invertible. Using the invertible matrix theorem, it can be derived that $A$ is the product of invertible matrices and hence is invertible. We now know that in the equation $Ax = b$, that there is a unique solution for all $b$. As far as what computations with Q and R will produce the answer, I think that computer $bQ^t$ and then row reducing $RQ^Tb$ will produce the proper reduction. 
+
+
+
+
+\end{document}

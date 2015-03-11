@@ -1,0 +1,36 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 22, Section 4.4: 17, 18, 23, 27}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{17.}
+$0V_1 - XV_2 - XV_3$
+\subsection*{18.}
+$b_1 = 1 * b_1 + 0 * b_k + .... + 0 * b_n $ so the B coordinate vector of $b_1$ is $ \begin{bmatrix}  1 \\ 0 \\ ... \\ 0  \end{bmatrix} = e_1$
+\subsection*{23.}
+Suppose that $[u]_b = [w]_b = \begin{bmatrix}  c_1 \\ ... \\ c_n  \end{bmatrix}$. By the definition of coordinate vectors $u - w = c_1b_1 + .... + c_n b_n$. Since u and w are arbitrary elements of V the coordinate mapping is one to one. 
+\subsection*{27.}
+The coordinate mapping produces the coordinate vectors $(1, 0, 0, 1), (3, 1, -2, 0,), (0, -1, 3, -1) $ respectively. We now test for linear independence. 
+
+The RREF is $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix}$ 
+
+Since the matrix has a pivot in each columns, it's columns (and thus the polynomials) are linearly independent. 
+ 
+
+\end{document}

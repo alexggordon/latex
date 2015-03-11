@@ -1,0 +1,44 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 29, Section 5.3: 5, 21, 22, 25}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{5.}
+By the Diagonalization Theorem, eigenvectors form the columns of the left factor and they correspond respectively to the eigenvalues on the diagonal of the middle factor. 
+$\lambda = 5 \begin{bmatrix}  1 \\1 \\ 1  \end{bmatrix}; \lambda = 5 \begin{bmatrix}  -2 \\0 \\ 1  \end{bmatrix}, \begin{bmatrix}  0 \\1 \\ 0  \end{bmatrix}$
+\subsection*{21. A)}
+False. The symbol D does not automatically denote a diagonal matrix. 
+\subsection*{21. B)}
+True. A is diagonalizable if and only if there are enough eigenvectors to form a basis of $R^n$. WE call such a basis an eigenvector basis of $R^n$
+\subsection*{21. C)}
+False. The 3x3 matrix in Example 4 has 3 eigenvalues but is not diagonalizable
+\subsection*{21. D)}
+False. Invertibility depends on - not being an eigenvalue. A Diagonalizable matrix may or may not have 0 as an eigenvalue. 
+\subsection*{22. A)}
+False. The n eigenvectors must be linearly independent by the Diagonalization theorem. 
+\subsection*{22. B)}
+False. The matrix in example 3 is Diagonalizable but it only has 2 different eigenvalues. 
+\subsection*{22. C)}
+True. This follows from AP = PD and the first two formulas given in the section 5.3
+\subsection*{22. D)}
+False. In example 4 the matrix is invertible because 0 is not an eigenvalue, but the matrix is not Diagonalizable.
+\subsection*{25.}
+Let $\{ v_1 \}$be a basis for the one-dimensional eigenspace. Let $v_2$ and $v_3$ form a basis for the two dimensional eigenspace and let $v_4$ be any eigenvector in the eigenspace. By theorem 7, $v_1, ... , v_4$ has to be linearly independent. It then follows that since A is 4x4, the Diagonalization theorem shows that A is diagonalizable.
+
+\end{document}

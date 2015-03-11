@@ -1,0 +1,60 @@
+\documentclass[12]{scrartcl}
+\usepackage{amssymb,amsmath,gensymb,dsfont,calc,multicol,fullpage}
+\makeatletter
+\newcommand\Aboxed[1]{
+   \@Aboxed#1\ENDDNE}
+\def\@Aboxed#1&#2\ENDDNE{%
+   &
+   \settowidth\@tempdima{$\displaystyle#1{}$}
+   \setlength\@tempdima{\@tempdima+\fboxsep+\fboxrule}
+   \kern-\@tempdima
+   \boxed{#1#2}
+}
+\makeatother
+
+\begin{document}
+
+\title{Homework 8, Section 1.8; 4, 7, 8, 9, 15, 26, 30}
+\author{Alex Gordon}
+\date{\today}
+\maketitle
+\section*{Homework}
+\subsection*{4.}
+RREF Matrix results in:
+$\begin{bmatrix} 1&0&0&-17 \\0&1&0&-7 \\ 0&0&1&-1  \end{bmatrix}$\\
+So $x_1 = -17$\\
+$x_2 = -7$\\
+$x_3 = -1$\\
+and $ X = \begin{bmatrix} -17 \\-7 \\ -1  \end{bmatrix}$\\
+This makes it clear that X is unique.
+\subsection*{7.}
+Let A be a 6x5 matrix. What must a and b be in order to define $T : \mathbb{R}^a \rightarrow \mathbb{R}^b$ by $T(X) = Ax$.
+The matrix A and the column vector x are multipliable. If A is a matrix of order p x q, and x is a matrix of order q x l, then the product matrix is of order p x l. 
+This confirms that the dimension of range space is p, meaning the number of rows of A is the dimension of the range vector space. 
+Since 6 is the dimension of the range space and 5 is the dimension of the domain vector space, then A is a matrix of order 6 x 5 and $T : \mathbb{R}^a \rightarrow \mathbb{R}^b$ by $T(X) = Ax$ that is A has $b = 6$ rows and $a = 5$ columns and so the co domain of $T$ is $\mathbb{R}^6$ and the domain of $T$ is $\mathbb{R}^5$.
+Therefore, $a =5$ and $b = 6$.
+\subsection*{8.}
+Since $X \in \mathbb{R}^5$, we have x has order $ 5 \cdot 1$ \\
+Since $Ax \in \mathbb{R}^7$, we have $Ax$ with order $ 7 \cdot 1$.
+Thus, by the product rule of matrices the number of rows in $Ax$ and the number of columns in $X$ equal the number of rows and columns in A, so A must be a matrix with 7 rows and 5 columns. 
+\subsection*{9.}
+RREF Matrix results in:
+$\begin{bmatrix} 1&0&-4&10&0 \\0&1&-3&5&0 \\ 0&0&0&4&0  \end{bmatrix}$\\
+Hence $x_4 = 0$\\
+$x_3 = free$\\
+$x_2 = 3x_3$\\
+$x_1 = 4x_3$\\
+and $ X = \begin{bmatrix} 4 \\3 \\ 1 \\ 0 \end{bmatrix}$\\
+\subsection*{15.}
+$ T(u) = \begin{bmatrix} 2  \\ 5  \end{bmatrix}$\\
+$ T(5) = \begin{bmatrix} 4  \\ -2  \end{bmatrix}$\\
+The images of $T(u)$ and $ T(v)$ are a reflection through the line $x_2 = x_1$
+\subsection*{26.}
+
+\subsection*{30.}
+$T(x) = c_1, \cdot 0 + c_2 \cdot 0 + ...... + c_p \cdot 0$\\
+Therefore, $T(x) = 0$ and T is linear. 
+
+
+
+\end{document}
